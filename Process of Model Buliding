@@ -1,0 +1,8 @@
+First the data imported and the data is normalized.
+The structure of the Neural Network is as follows: 1. The input is put into the input layer which flattens the images as a data of each pixel into the level 
+of grey shade as a number. 
+2. Two hidden layers with Rectified Linear Unit as activation function are formed with 300 and 100 neurons each respectively.
+3. The output layer with 10 neurons( no. of classes) is formed with softmax activation function. 
+4. Then the model is compiled with loss as Sparse Categorical Crossentropy and optimizer as Stochastic Gradient Descent, and metric as accuracy.
+5. Furthur the model is fitted with Epoch = 50 i.e. the process is of calculating estimated value and error is repeated 50 times.
+6. Finally, we plot the structure to check whether it's as intended as calculate the accuracy on test set.
