@@ -1,4 +1,4 @@
-First the data imported and the data is normalized.
+Firstly, the data is imported and the data is normalized.
 The structure of the Neural Network is as follows: 1. The input is put into the input layer which flattens the images as a data of each pixel into the level 
 of grey shade as a number. 
 2. Two hidden layers with Rectified Linear Unit as activation function are formed with 300 and 100 neurons each respectively.
