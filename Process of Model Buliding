@@ -1,9 +1,17 @@
 Firstly, the data is imported and the data is normalized.
 The structure of the Neural Network is as follows: 1. The input is put into the input layer which flattens the images as a data of each pixel into the level 
 of grey shade as a number. 
+ANN:
 2. Two hidden layers with Rectified Linear Unit as activation function are formed with 300 and 100 neurons each respectively.
 3. The output layer with 10 neurons( no. of classes) is formed with softmax activation function. 
 4. Then the model is compiled with loss as Sparse Categorical Crossentropy and optimizer as Stochastic Gradient Descent, and metric as accuracy.
 5. Furthur the model is fitted with Epoch = 50 i.e. the process is of calculating estimated value and error is repeated 50 times.
 6. Finally, we plot the structure to check whether it's as intended as calculate the accuracy on test set.
 7. The accuracy of model is in the ipynb file.
+CNN:
+2. Here we need to reshape the input data into 3D array of 28x28x1, the 28x28 is for pixel and the 3rd dimension is for channel, as the images are greyshade, 
+only one channel is required.
+3. We will be using 3x3 filters with a stride of 1, due to this we have to do padding, we prefer valid padding.
+4. Now we add a convolutional layer with dimensions 26x26x32, the 26x26 is for padded image, and we will use 32 filters.
+5. Next we will add a pooling layer of 2x2 window to reduce the computational time.
+6. From here we will proceed exactly like ANN.
