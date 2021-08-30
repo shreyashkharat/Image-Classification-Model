@@ -1,3 +1,0 @@
-The dataset consist of 60000 train observations and 10000 test observation. Each observation is 28*28 pixel image with 255 levels in grey shade.
-There are 10 classes in data as: 'Tshirt', 'Trousers', 'Pullover', 'Dress', 'Coat', 'Sandal', 'shirt', 'sneaker', 'bag', 'ankle boots'.
-https://keras.io/api/datasets/fashion_mnist/
